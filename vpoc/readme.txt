@@ -2,7 +2,7 @@ A tool use for extracting an overview of vCenter/VCSA Performance Chart related 
 
 
 
-# Instruction <h1>
+# Instruction 
 grant dba to vpx_schema
 
 Logon to vpx_schema then run the vpoc script
