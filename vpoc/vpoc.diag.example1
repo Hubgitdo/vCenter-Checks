@@ -1,0 +1,709 @@
+ 
+vCenter Proactive Oracle Checking Tool for VC 5.1
+Script ran on : 07/06/16 13:35:39
+script name: 02@ general_chk_5.1.sql
+########################################################################
+Oracle version    : Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+Character set     : UTF8
+Version           : VirtualCenter Database 5.5
+Product type      : VMware vCenter Server
+VPX_TASK-----------> 76899
+VPX_EVENT_ARG-----------> 1709909
+VPX_EVENT-----------> 402757
+VPX_STAT_COUNTER-----------> 828388
+VPX_TEXT_ARRAY-----------> 5443221
+VPX_HIST_STAT1_1-----------> 0
+VPX_HIST_STAT1_10-----------> 0
+VPX_HIST_STAT1_100-----------> 0
+VPX_HIST_STAT1_101-----------> 0
+VPX_HIST_STAT1_102-----------> 0
+VPX_HIST_STAT1_103-----------> 0
+VPX_HIST_STAT1_104-----------> 0
+VPX_HIST_STAT1_105-----------> 0
+VPX_HIST_STAT1_106-----------> 0
+VPX_HIST_STAT1_107-----------> 0
+VPX_HIST_STAT1_108-----------> 0
+VPX_HIST_STAT1_109-----------> 0
+VPX_HIST_STAT1_11-----------> 0
+VPX_HIST_STAT1_110-----------> 0
+VPX_HIST_STAT1_111-----------> 473142
+VPX_HIST_STAT1_112-----------> 472322
+VPX_HIST_STAT1_113-----------> 472447
+VPX_HIST_STAT1_114-----------> 473004
+VPX_HIST_STAT1_115-----------> 473095
+VPX_HIST_STAT1_116-----------> 472785
+VPX_HIST_STAT1_117-----------> 473033
+VPX_HIST_STAT1_118-----------> 472914
+VPX_HIST_STAT1_119-----------> 472614
+VPX_HIST_STAT1_12-----------> 0
+VPX_HIST_STAT1_120-----------> 473212
+VPX_HIST_STAT1_121-----------> 473248
+VPX_HIST_STAT1_122-----------> 473365
+VPX_HIST_STAT1_123-----------> 473252
+VPX_HIST_STAT1_124-----------> 473644
+VPX_HIST_STAT1_125-----------> 473573
+VPX_HIST_STAT1_126-----------> 473398
+VPX_HIST_STAT1_127-----------> 473017
+VPX_HIST_STAT1_128-----------> 473521
+VPX_HIST_STAT1_129-----------> 473635
+VPX_HIST_STAT1_13-----------> 0
+VPX_HIST_STAT1_130-----------> 473340
+VPX_HIST_STAT1_131-----------> 473390
+VPX_HIST_STAT1_132-----------> 473250
+VPX_HIST_STAT1_133-----------> 473171
+VPX_HIST_STAT1_134-----------> 473077
+VPX_HIST_STAT1_135-----------> 473335
+VPX_HIST_STAT1_136-----------> 473445
+VPX_HIST_STAT1_137-----------> 473328
+VPX_HIST_STAT1_138-----------> 473374
+VPX_HIST_STAT1_139-----------> 473379
+VPX_HIST_STAT1_14-----------> 0
+VPX_HIST_STAT1_140-----------> 473363
+VPX_HIST_STAT1_141-----------> 473412
+VPX_HIST_STAT1_142-----------> 473017
+VPX_HIST_STAT1_143-----------> 473500
+VPX_HIST_STAT1_144-----------> 473753
+VPX_HIST_STAT1_145-----------> 473832
+VPX_HIST_STAT1_146-----------> 473727
+VPX_HIST_STAT1_147-----------> 473783
+VPX_HIST_STAT1_148-----------> 473936
+VPX_HIST_STAT1_149-----------> 473885
+VPX_HIST_STAT1_15-----------> 0
+VPX_HIST_STAT1_150-----------> 473888
+VPX_HIST_STAT1_151-----------> 473680
+VPX_HIST_STAT1_152-----------> 473896
+VPX_HIST_STAT1_153-----------> 474266
+VPX_HIST_STAT1_154-----------> 474170
+VPX_HIST_STAT1_155-----------> 474468
+VPX_HIST_STAT1_156-----------> 474373
+VPX_HIST_STAT1_157-----------> 474424
+VPX_HIST_STAT1_158-----------> 410764
+VPX_HIST_STAT1_159-----------> 43425
+VPX_HIST_STAT1_16-----------> 0
+VPX_HIST_STAT1_160-----------> 0
+VPX_HIST_STAT1_161-----------> 0
+VPX_HIST_STAT1_162-----------> 0
+VPX_HIST_STAT1_163-----------> 0
+VPX_HIST_STAT1_164-----------> 0
+VPX_HIST_STAT1_165-----------> 0
+VPX_HIST_STAT1_166-----------> 0
+VPX_HIST_STAT1_167-----------> 0
+VPX_HIST_STAT1_168-----------> 0
+VPX_HIST_STAT1_169-----------> 0
+VPX_HIST_STAT1_17-----------> 0
+VPX_HIST_STAT1_170-----------> 0
+VPX_HIST_STAT1_171-----------> 0
+VPX_HIST_STAT1_172-----------> 0
+VPX_HIST_STAT1_173-----------> 0
+VPX_HIST_STAT1_174-----------> 0
+VPX_HIST_STAT1_175-----------> 0
+VPX_HIST_STAT1_176-----------> 0
+VPX_HIST_STAT1_177-----------> 0
+VPX_HIST_STAT1_178-----------> 0
+VPX_HIST_STAT1_179-----------> 0
+VPX_HIST_STAT1_18-----------> 0
+VPX_HIST_STAT1_180-----------> 0
+VPX_HIST_STAT1_181-----------> 0
+VPX_HIST_STAT1_182-----------> 0
+VPX_HIST_STAT1_183-----------> 0
+VPX_HIST_STAT1_184-----------> 0
+VPX_HIST_STAT1_185-----------> 0
+VPX_HIST_STAT1_186-----------> 0
+VPX_HIST_STAT1_187-----------> 0
+VPX_HIST_STAT1_188-----------> 0
+VPX_HIST_STAT1_189-----------> 0
+VPX_HIST_STAT1_19-----------> 0
+VPX_HIST_STAT1_190-----------> 0
+VPX_HIST_STAT1_191-----------> 0
+VPX_HIST_STAT1_192-----------> 0
+VPX_HIST_STAT1_193-----------> 0
+VPX_HIST_STAT1_194-----------> 0
+VPX_HIST_STAT1_195-----------> 0
+VPX_HIST_STAT1_196-----------> 0
+VPX_HIST_STAT1_197-----------> 0
+VPX_HIST_STAT1_198-----------> 0
+VPX_HIST_STAT1_199-----------> 0
+VPX_HIST_STAT1_2-----------> 0
+VPX_HIST_STAT1_20-----------> 0
+VPX_HIST_STAT1_200-----------> 0
+VPX_HIST_STAT1_201-----------> 0
+VPX_HIST_STAT1_202-----------> 0
+VPX_HIST_STAT1_203-----------> 0
+VPX_HIST_STAT1_204-----------> 0
+VPX_HIST_STAT1_205-----------> 0
+VPX_HIST_STAT1_206-----------> 0
+VPX_HIST_STAT1_207-----------> 0
+VPX_HIST_STAT1_208-----------> 0
+VPX_HIST_STAT1_209-----------> 0
+VPX_HIST_STAT1_21-----------> 0
+VPX_HIST_STAT1_210-----------> 0
+VPX_HIST_STAT1_211-----------> 0
+VPX_HIST_STAT1_212-----------> 0
+VPX_HIST_STAT1_213-----------> 0
+VPX_HIST_STAT1_214-----------> 0
+VPX_HIST_STAT1_215-----------> 0
+VPX_HIST_STAT1_216-----------> 0
+VPX_HIST_STAT1_217-----------> 0
+VPX_HIST_STAT1_218-----------> 0
+VPX_HIST_STAT1_219-----------> 0
+VPX_HIST_STAT1_22-----------> 0
+VPX_HIST_STAT1_220-----------> 0
+VPX_HIST_STAT1_221-----------> 0
+VPX_HIST_STAT1_222-----------> 0
+VPX_HIST_STAT1_223-----------> 0
+VPX_HIST_STAT1_224-----------> 0
+VPX_HIST_STAT1_225-----------> 0
+VPX_HIST_STAT1_226-----------> 0
+VPX_HIST_STAT1_227-----------> 0
+VPX_HIST_STAT1_228-----------> 0
+VPX_HIST_STAT1_229-----------> 0
+VPX_HIST_STAT1_23-----------> 0
+VPX_HIST_STAT1_230-----------> 0
+VPX_HIST_STAT1_231-----------> 0
+VPX_HIST_STAT1_232-----------> 0
+VPX_HIST_STAT1_233-----------> 0
+VPX_HIST_STAT1_234-----------> 0
+VPX_HIST_STAT1_235-----------> 0
+VPX_HIST_STAT1_236-----------> 0
+VPX_HIST_STAT1_237-----------> 0
+VPX_HIST_STAT1_238-----------> 0
+VPX_HIST_STAT1_239-----------> 0
+VPX_HIST_STAT1_24-----------> 0
+VPX_HIST_STAT1_240-----------> 0
+VPX_HIST_STAT1_241-----------> 0
+VPX_HIST_STAT1_25-----------> 0
+VPX_HIST_STAT1_26-----------> 0
+VPX_HIST_STAT1_27-----------> 0
+VPX_HIST_STAT1_28-----------> 0
+VPX_HIST_STAT1_29-----------> 0
+VPX_HIST_STAT1_3-----------> 0
+VPX_HIST_STAT1_30-----------> 0
+VPX_HIST_STAT1_31-----------> 0
+VPX_HIST_STAT1_32-----------> 0
+VPX_HIST_STAT1_33-----------> 0
+VPX_HIST_STAT1_34-----------> 0
+VPX_HIST_STAT1_35-----------> 0
+VPX_HIST_STAT1_36-----------> 0
+VPX_HIST_STAT1_37-----------> 0
+VPX_HIST_STAT1_38-----------> 0
+VPX_HIST_STAT1_39-----------> 0
+VPX_HIST_STAT1_4-----------> 0
+VPX_HIST_STAT1_40-----------> 0
+VPX_HIST_STAT1_41-----------> 0
+VPX_HIST_STAT1_42-----------> 0
+VPX_HIST_STAT1_43-----------> 0
+VPX_HIST_STAT1_44-----------> 0
+VPX_HIST_STAT1_45-----------> 0
+VPX_HIST_STAT1_46-----------> 0
+VPX_HIST_STAT1_47-----------> 0
+VPX_HIST_STAT1_48-----------> 0
+VPX_HIST_STAT1_49-----------> 0
+VPX_HIST_STAT1_5-----------> 0
+VPX_HIST_STAT1_50-----------> 0
+VPX_HIST_STAT1_51-----------> 0
+VPX_HIST_STAT1_52-----------> 0
+VPX_HIST_STAT1_53-----------> 0
+VPX_HIST_STAT1_54-----------> 0
+VPX_HIST_STAT1_55-----------> 0
+VPX_HIST_STAT1_56-----------> 0
+VPX_HIST_STAT1_57-----------> 0
+VPX_HIST_STAT1_58-----------> 0
+VPX_HIST_STAT1_59-----------> 0
+VPX_HIST_STAT1_6-----------> 0
+VPX_HIST_STAT1_60-----------> 0
+VPX_HIST_STAT1_61-----------> 0
+VPX_HIST_STAT1_62-----------> 0
+VPX_HIST_STAT1_63-----------> 0
+VPX_HIST_STAT1_64-----------> 0
+VPX_HIST_STAT1_65-----------> 0
+VPX_HIST_STAT1_66-----------> 0
+VPX_HIST_STAT1_67-----------> 0
+VPX_HIST_STAT1_68-----------> 0
+VPX_HIST_STAT1_69-----------> 0
+VPX_HIST_STAT1_7-----------> 0
+VPX_HIST_STAT1_70-----------> 0
+VPX_HIST_STAT1_71-----------> 0
+VPX_HIST_STAT1_72-----------> 0
+VPX_HIST_STAT1_73-----------> 0
+VPX_HIST_STAT1_74-----------> 0
+VPX_HIST_STAT1_75-----------> 0
+VPX_HIST_STAT1_76-----------> 0
+VPX_HIST_STAT1_77-----------> 0
+VPX_HIST_STAT1_78-----------> 0
+VPX_HIST_STAT1_79-----------> 0
+VPX_HIST_STAT1_8-----------> 0
+VPX_HIST_STAT1_80-----------> 0
+VPX_HIST_STAT1_81-----------> 0
+VPX_HIST_STAT1_82-----------> 0
+VPX_HIST_STAT1_83-----------> 0
+VPX_HIST_STAT1_84-----------> 0
+VPX_HIST_STAT1_85-----------> 0
+VPX_HIST_STAT1_86-----------> 0
+VPX_HIST_STAT1_87-----------> 0
+VPX_HIST_STAT1_88-----------> 0
+VPX_HIST_STAT1_89-----------> 0
+VPX_HIST_STAT1_9-----------> 0
+VPX_HIST_STAT1_90-----------> 0
+VPX_HIST_STAT1_91-----------> 0
+VPX_HIST_STAT1_92-----------> 0
+VPX_HIST_STAT1_93-----------> 0
+VPX_HIST_STAT1_94-----------> 0
+VPX_HIST_STAT1_95-----------> 0
+VPX_HIST_STAT1_96-----------> 0
+VPX_HIST_STAT1_97-----------> 0
+VPX_HIST_STAT1_98-----------> 0
+VPX_HIST_STAT1_99-----------> 0
+VPX_HIST_STAT2_1-----------> 1462931
+VPX_HIST_STAT2_10-----------> 1971834
+VPX_HIST_STAT2_11-----------> 1970568
+VPX_HIST_STAT2_12-----------> 1971458
+VPX_HIST_STAT2_13-----------> 1972335
+VPX_HIST_STAT2_14-----------> 1972937
+VPX_HIST_STAT2_15-----------> 1973737
+VPX_HIST_STAT2_16-----------> 1974419
+VPX_HIST_STAT2_17-----------> 1722574
+VPX_HIST_STAT2_18-----------> 1470991
+VPX_HIST_STAT2_19-----------> 1471635
+VPX_HIST_STAT2_2-----------> 1864084
+VPX_HIST_STAT2_20-----------> 1471495
+VPX_HIST_STAT2_21-----------> 1471654
+VPX_HIST_STAT2_22-----------> 1472067
+VPX_HIST_STAT2_23-----------> 1473554
+VPX_HIST_STAT2_24-----------> 1474470
+VPX_HIST_STAT2_25-----------> 1474465
+VPX_HIST_STAT2_26-----------> 2428203
+VPX_HIST_STAT2_27-----------> 2428393
+VPX_HIST_STAT2_28-----------> 2362968
+VPX_HIST_STAT2_29-----------> 2429223
+VPX_HIST_STAT2_3-----------> 1967428
+VPX_HIST_STAT2_30-----------> 2430030
+VPX_HIST_STAT2_31-----------> 2431214
+VPX_HIST_STAT2_32-----------> 2430522
+VPX_HIST_STAT2_33-----------> 2430177
+VPX_HIST_STAT2_34-----------> 2429699
+VPX_HIST_STAT2_35-----------> 2430010
+VPX_HIST_STAT2_36-----------> 2430558
+VPX_HIST_STAT2_37-----------> 2430420
+VPX_HIST_STAT2_38-----------> 2430603
+VPX_HIST_STAT2_39-----------> 2430393
+VPX_HIST_STAT2_4-----------> 1969584
+VPX_HIST_STAT2_40-----------> 2431066
+VPX_HIST_STAT2_41-----------> 2432148
+VPX_HIST_STAT2_42-----------> 2404006
+VPX_HIST_STAT2_43-----------> 448316
+VPX_HIST_STAT2_44-----------> 504122
+VPX_HIST_STAT2_45-----------> 503946
+VPX_HIST_STAT2_46-----------> 504111
+VPX_HIST_STAT2_47-----------> 503929
+VPX_HIST_STAT2_48-----------> 503821
+VPX_HIST_STAT2_49-----------> 503825
+VPX_HIST_STAT2_5-----------> 1970631
+VPX_HIST_STAT2_50-----------> 503788
+VPX_HIST_STAT2_51-----------> 503842
+VPX_HIST_STAT2_52-----------> 504070
+VPX_HIST_STAT2_53-----------> 504033
+VPX_HIST_STAT2_54-----------> 503968
+VPX_HIST_STAT2_55-----------> 125969
+VPX_HIST_STAT2_56-----------> 0
+VPX_HIST_STAT2_57-----------> 0
+VPX_HIST_STAT2_58-----------> 0
+VPX_HIST_STAT2_59-----------> 0
+VPX_HIST_STAT2_6-----------> 1971665
+VPX_HIST_STAT2_60-----------> 0
+VPX_HIST_STAT2_61-----------> 0
+VPX_HIST_STAT2_62-----------> 0
+VPX_HIST_STAT2_63-----------> 0
+VPX_HIST_STAT2_64-----------> 0
+VPX_HIST_STAT2_65-----------> 0
+VPX_HIST_STAT2_66-----------> 0
+VPX_HIST_STAT2_67-----------> 0
+VPX_HIST_STAT2_68-----------> 0
+VPX_HIST_STAT2_69-----------> 0
+VPX_HIST_STAT2_7-----------> 1971426
+VPX_HIST_STAT2_70-----------> 0
+VPX_HIST_STAT2_71-----------> 0
+VPX_HIST_STAT2_72-----------> 0
+VPX_HIST_STAT2_73-----------> 0
+VPX_HIST_STAT2_74-----------> 0
+VPX_HIST_STAT2_75-----------> 0
+VPX_HIST_STAT2_76-----------> 0
+VPX_HIST_STAT2_77-----------> 0
+VPX_HIST_STAT2_78-----------> 0
+VPX_HIST_STAT2_79-----------> 0
+VPX_HIST_STAT2_8-----------> 1972573
+VPX_HIST_STAT2_80-----------> 0
+VPX_HIST_STAT2_81-----------> 0
+VPX_HIST_STAT2_82-----------> 0
+VPX_HIST_STAT2_83-----------> 0
+VPX_HIST_STAT2_84-----------> 0
+VPX_HIST_STAT2_85-----------> 0
+VPX_HIST_STAT2_9-----------> 1972242
+VPX_HIST_STAT3_1-----------> 3889596
+VPX_HIST_STAT3_10-----------> 3623429
+VPX_HIST_STAT3_11-----------> 3892431
+VPX_HIST_STAT3_12-----------> 3653883
+VPX_HIST_STAT3_13-----------> 3998800
+VPX_HIST_STAT3_14-----------> 3576426
+VPX_HIST_STAT3_15-----------> 4012549
+VPX_HIST_STAT3_16-----------> 3654070
+VPX_HIST_STAT3_17-----------> 4013011
+VPX_HIST_STAT3_18-----------> 3655046
+VPX_HIST_STAT3_19-----------> 3896664
+VPX_HIST_STAT3_2-----------> 3651872
+VPX_HIST_STAT3_20-----------> 3538589
+VPX_HIST_STAT3_21-----------> 3897128
+VPX_HIST_STAT3_22-----------> 3413910
+VPX_HIST_STAT3_23-----------> 3645447
+VPX_HIST_STAT3_24-----------> 3407747
+VPX_HIST_STAT3_25-----------> 3773422
+VPX_HIST_STAT3_26-----------> 3647962
+VPX_HIST_STAT3_27-----------> 3886938
+VPX_HIST_STAT3_28-----------> 3650696
+VPX_HIST_STAT3_29-----------> 3767500
+VPX_HIST_STAT3_3-----------> 3890743
+VPX_HIST_STAT3_30-----------> 3651233
+VPX_HIST_STAT3_31-----------> 4378098
+VPX_HIST_STAT3_32-----------> 3404152
+VPX_HIST_STAT3_4-----------> 3651534
+VPX_HIST_STAT3_5-----------> 3890376
+VPX_HIST_STAT3_6-----------> 3546597
+VPX_HIST_STAT3_7-----------> 3890401
+VPX_HIST_STAT3_8-----------> 3652384
+VPX_HIST_STAT3_9-----------> 3891627
+VPX_HIST_STAT4_1-----------> 0
+VPX_HIST_STAT4_10-----------> 0
+VPX_HIST_STAT4_100-----------> 0
+VPX_HIST_STAT4_101-----------> 0
+VPX_HIST_STAT4_102-----------> 0
+VPX_HIST_STAT4_103-----------> 0
+VPX_HIST_STAT4_104-----------> 0
+VPX_HIST_STAT4_105-----------> 0
+VPX_HIST_STAT4_106-----------> 0
+VPX_HIST_STAT4_107-----------> 0
+VPX_HIST_STAT4_108-----------> 0
+VPX_HIST_STAT4_109-----------> 0
+VPX_HIST_STAT4_11-----------> 0
+VPX_HIST_STAT4_110-----------> 0
+VPX_HIST_STAT4_111-----------> 0
+VPX_HIST_STAT4_112-----------> 0
+VPX_HIST_STAT4_113-----------> 0
+VPX_HIST_STAT4_114-----------> 0
+VPX_HIST_STAT4_115-----------> 0
+VPX_HIST_STAT4_116-----------> 0
+VPX_HIST_STAT4_117-----------> 0
+VPX_HIST_STAT4_118-----------> 0
+VPX_HIST_STAT4_119-----------> 0
+VPX_HIST_STAT4_12-----------> 0
+VPX_HIST_STAT4_120-----------> 0
+VPX_HIST_STAT4_121-----------> 0
+VPX_HIST_STAT4_122-----------> 0
+VPX_HIST_STAT4_123-----------> 0
+VPX_HIST_STAT4_124-----------> 0
+VPX_HIST_STAT4_125-----------> 0
+VPX_HIST_STAT4_126-----------> 0
+VPX_HIST_STAT4_127-----------> 0
+VPX_HIST_STAT4_128-----------> 0
+VPX_HIST_STAT4_129-----------> 0
+VPX_HIST_STAT4_13-----------> 0
+VPX_HIST_STAT4_130-----------> 0
+VPX_HIST_STAT4_131-----------> 0
+VPX_HIST_STAT4_132-----------> 0
+VPX_HIST_STAT4_133-----------> 0
+VPX_HIST_STAT4_134-----------> 0
+VPX_HIST_STAT4_135-----------> 0
+VPX_HIST_STAT4_136-----------> 0
+VPX_HIST_STAT4_137-----------> 0
+VPX_HIST_STAT4_138-----------> 0
+VPX_HIST_STAT4_139-----------> 0
+VPX_HIST_STAT4_14-----------> 0
+VPX_HIST_STAT4_140-----------> 0
+VPX_HIST_STAT4_141-----------> 0
+VPX_HIST_STAT4_142-----------> 0
+VPX_HIST_STAT4_143-----------> 0
+VPX_HIST_STAT4_144-----------> 0
+VPX_HIST_STAT4_145-----------> 0
+VPX_HIST_STAT4_146-----------> 0
+VPX_HIST_STAT4_147-----------> 0
+VPX_HIST_STAT4_148-----------> 0
+VPX_HIST_STAT4_149-----------> 0
+VPX_HIST_STAT4_15-----------> 0
+VPX_HIST_STAT4_150-----------> 0
+VPX_HIST_STAT4_151-----------> 0
+VPX_HIST_STAT4_152-----------> 0
+VPX_HIST_STAT4_153-----------> 0
+VPX_HIST_STAT4_154-----------> 0
+VPX_HIST_STAT4_155-----------> 0
+VPX_HIST_STAT4_156-----------> 0
+VPX_HIST_STAT4_157-----------> 0
+VPX_HIST_STAT4_158-----------> 0
+VPX_HIST_STAT4_159-----------> 0
+VPX_HIST_STAT4_16-----------> 0
+VPX_HIST_STAT4_160-----------> 0
+VPX_HIST_STAT4_161-----------> 0
+VPX_HIST_STAT4_162-----------> 0
+VPX_HIST_STAT4_163-----------> 0
+VPX_HIST_STAT4_164-----------> 0
+VPX_HIST_STAT4_165-----------> 0
+VPX_HIST_STAT4_166-----------> 0
+VPX_HIST_STAT4_167-----------> 0
+VPX_HIST_STAT4_168-----------> 0
+VPX_HIST_STAT4_169-----------> 0
+VPX_HIST_STAT4_17-----------> 0
+VPX_HIST_STAT4_170-----------> 0
+VPX_HIST_STAT4_171-----------> 0
+VPX_HIST_STAT4_172-----------> 0
+VPX_HIST_STAT4_173-----------> 0
+VPX_HIST_STAT4_174-----------> 0
+VPX_HIST_STAT4_175-----------> 0
+VPX_HIST_STAT4_176-----------> 0
+VPX_HIST_STAT4_177-----------> 0
+VPX_HIST_STAT4_178-----------> 0
+VPX_HIST_STAT4_179-----------> 0
+VPX_HIST_STAT4_18-----------> 0
+VPX_HIST_STAT4_180-----------> 0
+VPX_HIST_STAT4_181-----------> 0
+VPX_HIST_STAT4_182-----------> 0
+VPX_HIST_STAT4_183-----------> 0
+VPX_HIST_STAT4_19-----------> 0
+VPX_HIST_STAT4_2-----------> 0
+VPX_HIST_STAT4_20-----------> 0
+VPX_HIST_STAT4_21-----------> 0
+VPX_HIST_STAT4_22-----------> 0
+VPX_HIST_STAT4_23-----------> 0
+VPX_HIST_STAT4_24-----------> 0
+VPX_HIST_STAT4_25-----------> 0
+VPX_HIST_STAT4_26-----------> 0
+VPX_HIST_STAT4_27-----------> 0
+VPX_HIST_STAT4_28-----------> 0
+VPX_HIST_STAT4_29-----------> 0
+VPX_HIST_STAT4_3-----------> 0
+VPX_HIST_STAT4_30-----------> 0
+VPX_HIST_STAT4_31-----------> 0
+VPX_HIST_STAT4_32-----------> 0
+VPX_HIST_STAT4_33-----------> 0
+VPX_HIST_STAT4_34-----------> 0
+VPX_HIST_STAT4_35-----------> 0
+VPX_HIST_STAT4_36-----------> 0
+VPX_HIST_STAT4_37-----------> 0
+VPX_HIST_STAT4_38-----------> 0
+VPX_HIST_STAT4_39-----------> 0
+VPX_HIST_STAT4_4-----------> 0
+VPX_HIST_STAT4_40-----------> 0
+VPX_HIST_STAT4_41-----------> 0
+VPX_HIST_STAT4_42-----------> 0
+VPX_HIST_STAT4_43-----------> 0
+VPX_HIST_STAT4_44-----------> 0
+VPX_HIST_STAT4_45-----------> 0
+VPX_HIST_STAT4_46-----------> 0
+VPX_HIST_STAT4_47-----------> 0
+VPX_HIST_STAT4_48-----------> 0
+VPX_HIST_STAT4_49-----------> 0
+VPX_HIST_STAT4_5-----------> 0
+VPX_HIST_STAT4_50-----------> 0
+VPX_HIST_STAT4_51-----------> 0
+VPX_HIST_STAT4_52-----------> 0
+VPX_HIST_STAT4_53-----------> 0
+VPX_HIST_STAT4_54-----------> 0
+VPX_HIST_STAT4_55-----------> 0
+VPX_HIST_STAT4_56-----------> 0
+VPX_HIST_STAT4_57-----------> 0
+VPX_HIST_STAT4_58-----------> 0
+VPX_HIST_STAT4_59-----------> 0
+VPX_HIST_STAT4_6-----------> 0
+VPX_HIST_STAT4_60-----------> 0
+VPX_HIST_STAT4_61-----------> 0
+VPX_HIST_STAT4_62-----------> 0
+VPX_HIST_STAT4_63-----------> 0
+VPX_HIST_STAT4_64-----------> 0
+VPX_HIST_STAT4_65-----------> 317120
+VPX_HIST_STAT4_66-----------> 1069147
+VPX_HIST_STAT4_67-----------> 1090146
+VPX_HIST_STAT4_68-----------> 1111073
+VPX_HIST_STAT4_69-----------> 1146840
+VPX_HIST_STAT4_7-----------> 0
+VPX_HIST_STAT4_70-----------> 1165699
+VPX_HIST_STAT4_71-----------> 1148792
+VPX_HIST_STAT4_72-----------> 1146326
+VPX_HIST_STAT4_73-----------> 1175132
+VPX_HIST_STAT4_74-----------> 952903
+VPX_HIST_STAT4_75-----------> 1204859
+VPX_HIST_STAT4_76-----------> 1167600
+VPX_HIST_STAT4_77-----------> 377204
+VPX_HIST_STAT4_78-----------> 0
+VPX_HIST_STAT4_79-----------> 0
+VPX_HIST_STAT4_8-----------> 0
+VPX_HIST_STAT4_80-----------> 0
+VPX_HIST_STAT4_81-----------> 0
+VPX_HIST_STAT4_82-----------> 0
+VPX_HIST_STAT4_83-----------> 0
+VPX_HIST_STAT4_84-----------> 0
+VPX_HIST_STAT4_85-----------> 0
+VPX_HIST_STAT4_86-----------> 0
+VPX_HIST_STAT4_87-----------> 0
+VPX_HIST_STAT4_88-----------> 0
+VPX_HIST_STAT4_89-----------> 0
+VPX_HIST_STAT4_9-----------> 0
+VPX_HIST_STAT4_90-----------> 0
+VPX_HIST_STAT4_91-----------> 0
+VPX_HIST_STAT4_92-----------> 0
+VPX_HIST_STAT4_93-----------> 0
+VPX_HIST_STAT4_94-----------> 0
+VPX_HIST_STAT4_95-----------> 0
+VPX_HIST_STAT4_96-----------> 0
+VPX_HIST_STAT4_97-----------> 0
+VPX_HIST_STAT4_98-----------> 0
+VPX_HIST_STAT4_99-----------> 0
+script name: 02@ procedures_chk.sql
+There is no issue with VMware procedures. There are 30 procedures
+List of Procedures in this database
+STATS_ROLLUP1_PROC
+STATS_ROLLUP2_PROC
+STATS_ROLLUP3_PROC
+PURGE_STAT2_PROC
+PURGE_STAT3_PROC
+L_STATS_ROLLUP1_PROC
+L_STATS_ROLLUP2_PROC
+L_STATS_ROLLUP3_PROC
+L_PURGE_STAT2_PROC
+L_PURGE_STAT3_PROC
+INSERT_STATS_PROC
+LOAD_STATS_PROC
+DELETE_STATS_PROC
+LOAD_USAGE_STATS_PROC
+PURGE_USAGE_STAT_PROC
+CLEANUP_EVENTS_TASKS_PROC
+PROCESS_LICENSE_SNAPSHOT_PROC
+CALC_TOPN1_PROC
+CALC_TOPN2_PROC
+CALC_TOPN3_PROC
+CALC_TOPN4_PROC
+CLEAR_TOPN1_PROC
+CLEAR_TOPN2_PROC
+CLEAR_TOPN3_PROC
+CLEAR_TOPN4_PROC
+RULE_TOPN1_PROC
+RULE_TOPN2_PROC
+RULE_TOPN3_PROC
+RULE_TOPN4_PROC
+PROCESS_PERFORMANCE_DATA_PROC
+script name: 02@ schedulerchk.sql
+########################################################################
+User jobs for VPXADMIN
+ID JOB NAME  FAILED BROKEN    LAST RUN            NEXT RUN      TIME TAKEN
+__________________________________________________________________________________________________
+1  -  begin l_stats_rollup1_proc; end;  -  0 -   N - 07/06/16 13:20:36 - 07/06/16 13:50:36 - 1714572 sec
+2  -  begin l_stats_rollup2_proc; l_Purge_Stat2_proc; purge_usage_stat_proc; end;  -  0 -   N - 07/06/16 12:56:14 - 07/06/16 14:56:14 - 171624 sec
+3  -  begin l_stats_rollup3_proc; l_purge_stat3_proc; end;  -  0 -   N - 07/06/16 03:16:32 - 07/07/16 03:16:32 - 9333 sec
+4  -  begin cleanup_events_tasks_proc; end;  -  0 -   N - 07/06/16 09:14:50 - 07/06/16 15:14:50 - 204588 sec
+5  -  DECLARE V_MAX_GEN NUMBER(22);
+   BEGIN
+   SELECT (MAX(GEN_NUMBER) - 300000) into V_MAX_GEN FROM VPX_PROPERTY_BULLETIN;
+ 
+   DELETE FROM VPX_PROPERTY_BULLETIN
+   WHERE
+VPX_PROPERTY_BULLETIN.OPERATION_TYPE=2 AND
+          VPX_PROPERTY_BULLETIN.GEN_NUMBER < V_MAX_GEN;
+ 
+   DELETE FROM VPX_PROPERTY_BULLETIN
+   WHERE EXISTS(
+          SELECT 1 FROM VPX_PROPERTY_BULLETIN
+TMP
+             WHERE TMP.OBJECT_MOID=VPX_PROPERTY_BULLETIN.OBJECT_MOID
+                AND   TMP.OPERATION_TYPE=1
+                AND   TMP.GEN_NUMBER < V_MAX_GEN) ;
+ 
+  END;  -  0 -   N -
+07/06/16 11:45:41 - 07/06/16 14:45:41 - 4735 sec
+6  -  rule_topn1_proc;  -  0 -   N - 07/06/16 13:36:16 - 07/06/16 13:46:16 - 784861 sec
+7  -  rule_topn3_proc;  -  0 -   N - 07/06/16 12:56:14 - 07/06/16 14:56:14 - 201533 sec
+8  -  rule_topn2_proc;  -  0 -   N - 07/06/16 13:20:36 - 07/06/16 13:50:36 - 297586 sec
+9  -  rule_topn4_proc;  -  0 -   N - 07/05/16 19:27:07 - 07/06/16 19:27:07 - 55 sec
+10  -  begin process_performance_data_proc; end;  -  0 -   N - 07/06/16 13:21:01 - 07/06/16 13:51:01 - 42264 sec
+script name: 02@ statistic_setting.sql
+########################################################################
+Number of VMs  :  4610
+Number of Hosts : 244
+ 
+Interval during is in minutes
+STAT_TYPE  INTERVAL_DUR SAVE_DAYS  STATS_LVL  ENABLED
+____________________________________________________________________________________________________________________
+*Past day       5       24              1       1
+Past week       30      168             1       1
+Past mont       120     720             1       1
+Past year       1440    8760            1       1
+########################################################################
+SP2-0310: unable to open file "invalidobj.diag"
+script name: 02@ vmware_perf_index.sql
+########################################################################
+INDEX NAME              STATUS      TABLE NAME         PCT_FREE  LAST_ANALYZED
+_______________________________________________________________________________
+VPX_SAMPLE_TIME1_M1      VALID     VPX_SAMPLE_TIME1      10     07/05/16 22:02:32
+VPX_SAMPLE_TIME2_M1      VALID     VPX_SAMPLE_TIME2      10     07/05/16 22:04:15
+VPX_SAMPLE_TIME3_M1      VALID     VPX_SAMPLE_TIME3      10     07/05/16 22:07:11
+VPX_SAMPLE_TIME4_M1      VALID     VPX_SAMPLE_TIME4      10     06/28/16 22:04:37
+TABLE NAME          NUMBER OF ROWS              LAST_ANALYZED
+_______________________________________________________________
+VPX_SAMPLE_TIME1      07/05/16 22:01:59      199
+VPX_SAMPLE_TIME2      07/05/16 22:03:41      280
+VPX_SAMPLE_TIME3      07/05/16 22:07:11      348
+VPX_SAMPLE_TIME4      06/28/16 22:04:37      108
+ 
+NAME                           INTERVAL_DURATION_MIN SAVE_FOR_DAYS STATS_LEVEL E
+------------------------------ --------------------- ------------- ----------- -
+Past day                                           5            24           1 Y
+Past week                                         30           168           1 Y
+Past month                                       120           720           1 Y
+Past year                                       1440          8760           1 Y
+ 
+NAME                           INTERVAL_DURATION_MIN SAVE_FOR_DAYS STATS_LEVEL E
+------------------------------ --------------------- ------------- ----------- -
+Past day                                           5            24           1 Y
+Past week                                         30           168           1 Y
+Past month                                       120           720           1 Y
+Past year                                       1440          8760           1 Y
+ 
+USERNAME        GRANTED_ROLE                   ADM DEF OS_
+--------------- ------------------------------ --- --- ---
+VPXADMIN        CONNECT                        NO  YES NO
+VPXADMIN        DBA                            NO  YES NO
+VPXADMIN        RESOURCE                       NO  YES NO
+ 
+GRANTEE    OWNER  TABLE_NAME           GRANT PRIVILEGE                      GRA HIE
+---------- ------ -------------------- ----- ------------------------------ --- ---
+VPXADMIN   SYS    V_$LOGHIST           SYS   SELECT                         NO  NO
+VPXADMIN   SYS    V_$SYSMETRIC_HISTORY SYS   SELECT                         NO  NO
+VPXADMIN   SYS    V_$SYSSTAT           SYS   SELECT                         NO  NO
+VPXADMIN   SYS    V_$SYSTEM_EVENT      SYS   SELECT                         NO  NO
+VPXADMIN   SYS    DBA_DATA_FILES       SYS   SELECT                         NO  NO
+VPXADMIN   SYS    DBMS_JOB             SYS   EXECUTE                        NO  NO
+VPXADMIN   SYS    DBMS_LOCK            SYS   EXECUTE                        NO  NO
+ 
+USERNAME        PRIVILEGE                      ADM
+--------------- ------------------------------ ---
+VPXADMIN        CREATE SEQUENCE                NO
+VPXADMIN        CREATE SESSION                 NO
+VPXADMIN        CREATE MATERIALIZED VIEW       NO
+VPXADMIN        CREATE VIEW                    NO
+VPXADMIN        UNLIMITED TABLESPACE           NO
+VPXADMIN        CREATE TABLE                   NO
+ 
+TABLESPACE_NAME                     BYTES  MAX_BYTES     BLOCKS MAX_BLOCKS DRO
+------------------------------ ---------- ---------- ---------- ---------- ---
+VPX_DATA_01                    7.7209E+10         -1    9424928         -1 NO
+VPX_INDX_01                    1.1736E+10         -1    1432608         -1 NO
+ 
+     STAT1      STAT2      STAT3      STAT4      TOTAL
+---------- ---------- ---------- ---------- ----------
+       241         85         32        183        541
+ 
+     DAILY     WEEKLY    MONTHLY     YEARLY
+---------- ---------- ---------- ----------
+  22714986   34342989   41137653   12718352
+ 
+    JOB_ID STATUS     LAST_RUN
+---------- ---------- ---------------------------------------------------------------------------
+         1 WAITING    06-JUL-16 06.05.00.000 PM
+         3 WAITING    06-JUL-16 06.00.00.000 AM
+         2 WAITING    06-JUL-16 03.00.00.000 PM
+         4 WAITING    29-JUN-16 12.00.00.000 AM
+ 
