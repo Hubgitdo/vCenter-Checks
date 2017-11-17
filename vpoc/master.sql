@@ -16,7 +16,7 @@ alter session set nls_date_format = 'MM/DD/YY HH24:MI:SS';
 @procedures_chk.sql
 @schedulerchk.sql
 @statistic_setting.sql
-@invalidobj.diag
+@invalidobj.sql
 @vmware_perf_index.sql
 @stat_view.sql
 @priv_brief.sql
