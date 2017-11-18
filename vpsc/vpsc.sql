@@ -1,6 +1,7 @@
 print  "#####################################################"
 print  "          vCenter Proactive SQL Server Check         "
 print  "#####################################################"
+-- Change the database name if yours isn't VCDB
 use [VCDB]
 
 select @@version , current_user ;
