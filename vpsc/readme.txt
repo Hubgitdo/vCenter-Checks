@@ -2,5 +2,5 @@ A SQL Server of VPOC tool use for extracting an overview of vCenter/VCSA Perform
 
 Instruction
 * Copy the script in any directory
-** As Administrator run the follow. Assuming the directory is at D drive.
-***SQLCMD -i d:\vpsc.sql -o d:\vpsc.diag
+ ** As Administrator run the follow. Assuming the directory is at D drive.
+   ***SQLCMD -i d:\vpsc.sql -o d:\vpsc.diag
