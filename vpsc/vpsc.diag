@@ -35,7 +35,6 @@ ReportServerTempDB                                                              
 VCDB                                                                                                                                  1441.3047           91.81179           0
 VCDB_DATA                                                                                                                             2.4921875          93.730408           0
 vcloud                                                                                                                                 86839.43          0.5906285           0
-David                                                                                                                                 8.9921875          15.958949           0
 
 (10 rows affected)
 DBCC execution completed. If DBCC printed error messages, contact your system administrator.
