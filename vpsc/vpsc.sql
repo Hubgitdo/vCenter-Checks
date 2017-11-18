@@ -1,13 +1,3 @@
-/*
-Author: Kay Liew
-Date: May 13, 2015
-Description: similar to Oracle VPOC.
-Instruction to use:
-SQLCMD -i d:\vpsc.sql -o d:\vpsc.diag
--assuming script stores in d drive.
-*/
-
-
 print  "#####################################################"
 print  "          vCenter Proactive SQL Server Check         "
 print  "#####################################################"
@@ -85,12 +75,12 @@ print "#####################################################"
 print "                Hist Stat Settings                   "
 print "#####################################################"
 
- select substring(interval_def_name, 9,9),convert(decimal(5,0),interval_val/60) "Interval Duration in Min", 
+ select substring(interval_def_name, 9,9) as Interval_Name,convert(decimal(5,0),interval_val/60) "Interval Duration in Min", 
  case convert(decimal(5,0),INTERVAL_LENGTH/3600/24)
-   when 1 then 'Hourly'
-   when 7 then 'Daily'
-   when 30 then 'Monthly'
-   when 365 then 'Yearly'
+   when 1 then 'Day'
+   when 7 then 'Week'
+   when 30 then 'Month'
+   when 365 then 'Year'
  end "Interval"
   , stats_level "Statistic Level", 
   case rollup_enabled_flg 
@@ -98,6 +88,20 @@ print "#####################################################"
    when 0 then 'NO'
   end "Stat Enable"  from VPX_STAT_INTERVAL_DEF;
 
+print "#####################################################"
+print "                Events and Tasks                "
+print "#####################################################"
+select case name
+ when 'event.maxAge' then 'Events Days Keep'
+ when 'event.maxAgeEnabled' then 'Enabled'
+end as Event, value as Setting from VPX_PARAMETER where name in ('event.maxAge','event.maxAgeEnabled');
+
+select case name
+ when 'task.maxAge' then 'Tasks Days Keep'
+ when 'task.maxAgeEnabled' then 'Enabled'
+end as Event, value as Setting from VPX_PARAMETER where name in ('task.maxAge','task.maxAgeEnabled');
+
+  
 
 print  "#####################################################"
 print  "                  Active Sessions                    "
@@ -139,8 +143,6 @@ description,
 owner_sid,
 date_created as 'Job Created' from msdb.dbo .sysjobs_view;
 
-
-select top 20 * from msdb.dbo.sysjobhistory order by run_date asc;
 
 print  "#####################################################"
 print "                     END OF REPORT                    "
