@@ -37,16 +37,3 @@ dbms_output.new_line;
 end;
 /
 spool off;
-
-
-© 2017 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-API
-Training
-Shop
-Blog
