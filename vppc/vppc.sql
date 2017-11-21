@@ -1,5 +1,5 @@
 /*
-Author: Kay Liew
+Author: kliew
 Date Created: May 12 2015
 Description: A little script just to ease my job. I reserve the rights to add or remove contents in this script as I see fits.
 How to run: sudo -u postgres psql -d vcdb -U vc -f vppc.sql -o vppc.diag
