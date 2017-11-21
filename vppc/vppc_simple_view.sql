@@ -3,13 +3,13 @@ Author: Kay Liew
 Date Created: May 12 2015
 Date Revised: 11/17/2016 Simplified
 Description: A little script just to ease my job. I reserve the rights to add or remove contents in this script as I see fits.
-How to run: sudo -u postgres psql -d vcdb -U vc -f vppc.sql -o vppc.diag
-How to run in html format: sudo psql -U postgres -H -f vppc.sql -o vppc_diag.html
-For VCSA environment:
-/opt/vmware/vpostgres/current/bin/psql -U postgres -d VCDB -f vppc.sql -o vppc.diag > vppc1.diag
-/opt/vmware/vpostgres/current/bin/psql -U postgres -d VCDB -H -f vppc.sql -o vppc_diag.html > vppc1_diag.html
-/opt/vmware/vpostgres/current/bin/psql -U postgres -d VCDB -f vppc.sql -o vppc.diag
-/opt/vmware/vpostgres/current/bin/psql -U postgres -d VCDB -H -f vppc.sql -o vppc_diag.html
+How to run: sudo -u postgres psql -d vcdb -U vc -f vppc_simple_view.sql -o vppc_simple_view.diag
+How to run in html format: sudo psql -U postgres -H -f vppc_simple_view.sql -o vppc_simple_view_diag.html
+From VCSA environment. Just some examples.
+/opt/vmware/vpostgres/current/bin/psql -U postgres -d VCDB -f vppc_simple_view.sql -o vppc_simple_view.diag > vppc1.diag
+/opt/vmware/vpostgres/current/bin/psql -U postgres -d VCDB -H -f vppc.sql -o vppc_simple_view_diag.html > vppc1_diag.html
+/opt/vmware/vpostgres/current/bin/psql -U postgres -d VCDB -f vppc_simple_view.sql -o vppc_simple_view.diag
+/opt/vmware/vpostgres/current/bin/psql -U postgres -d VCDB -H -f vppc_simple_view.sql -o vppc_simple_view_diag.html
 */
 
 \pset border 2 
